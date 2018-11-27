@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRSelfHost", "SignalRSelfHost\SignalRSelfHost.csproj", "{9F1336F9-EC47-4A0D-B4AD-1D842A40AE43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F1336F9-EC47-4A0D-B4AD-1D842A40AE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1336F9-EC47-4A0D-B4AD-1D842A40AE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1336F9-EC47-4A0D-B4AD-1D842A40AE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1336F9-EC47-4A0D-B4AD-1D842A40AE43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41BB8D50-C086-445A-BAD4-A8A6A98EF7E8}
+	EndGlobalSection
+EndGlobal
