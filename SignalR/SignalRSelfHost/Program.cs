@@ -46,6 +46,19 @@ namespace SignalRSelfHost
             Clients.All.addMessage(name, message);
         }
     }
+    public class Data
+    {
+        public DateTime Time { get; internal set; }
+        public int Size { get; internal set; }
+    }
+
+    public class FeedbackHub : Hub
+    {
+        public void Send(Data data)
+        {
+            Clients.All.addMessage(data);
+        }
+    }
 
     public class Broadcaster
     {
@@ -57,13 +70,16 @@ namespace SignalRSelfHost
 
         public static void Start()
         {
-            var hubContext = GlobalHost.ConnectionManager.GetHubContext<MyHub>();
+            Random rd = new Random();
+            
+            var hubContext = GlobalHost.ConnectionManager.GetHubContext<FeedbackHub>();
             Task.Factory.StartNew(() =>
             {
                 while (isRunning)
                 {
                     Thread.Sleep(1000);
-                    hubContext.Clients.All.addMessage("server", DateTime.Now.ToString("G"));
+                    Data dt = new Data() { Time = DateTime.Now, Size = rd.Next(0, 20) };
+                    hubContext.Clients.All.addMessage(dt);
                 }
             });
         }
