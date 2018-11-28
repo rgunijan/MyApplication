@@ -17,3 +17,6 @@ https://github.com/SignalR/bower-signalr/blob/master/jquery.signalR.min.js
 https://azure.microsoft.com/en-au/services/signalr-service/
 
 https://docs.microsoft.com/en-us/aspnet/signalr/overview/deployment/tutorial-signalr-self-host
+
+
+6> npm install chart.js --save

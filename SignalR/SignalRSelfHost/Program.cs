@@ -77,7 +77,7 @@ namespace SignalRSelfHost
             {
                 while (isRunning)
                 {
-                    Thread.Sleep(1000);
+                    Thread.Sleep(250);
                     Data dt = new Data() { Time = DateTime.Now, Size = rd.Next(0, 20) };
                     hubContext.Clients.All.addMessage(dt);
                 }
