@@ -1,3 +1,6 @@
 SignalR/SignalRSelfHost/obj/
 SignalR/SignalRSelfHost/bin/
 SignalR/.vs/
+SampleCoreWeb/bin/
+SampleCoreWeb/obj/
+SignalR/packages/
